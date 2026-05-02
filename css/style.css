@@ -1,52 +1,339 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 :root {
     --cor--vermelho: #da251d;
-    --cor--verde: #47a251;
+    --cor--verde: #2f7f7f;
     --cor--cinza: #d3d3d3;
-    --cor--verde--claro: #bdecb6;
+    --cor--verde--claro: #5aa7a0;
 }
 
+body {
+    background: #f5f5f5;
+}
+
+/* ============ HEADER ================ */
+
 header {
-    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    height: 100px; 
 }
 
-header h1 {
-    font-size: 25px;
-    padding: 5px;
+.titulo_header {
+    font-weight: bold;
+    color: var(--cor--verde);
+    padding: 15px;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
-    gap: 40px;
 }
 
-header nav a{
+header nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 0 25px;
     text-decoration: none;
     color: black;
-    border-radius: 5px;
+    transition: 0.3s;
 }
 
-header nav a:hover{
+header nav a:hover {
     background-color: var(--cor--verde--claro);
     color: white;
-    padding: 45px 0px 45px 0px;
 }
 
-/* aaaaaaaaaaa */
 
-.info_titulo{
-    background-image: url("../img/palestra_fundo.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 800px;
+/* ============ MAIN BANNER ================ */
+
+.banner {
+    height: 600px;
+    background: url('../imagens/palestra.webp') center/cover;
+    background-attachment: fixed;
+}
+
+.titulo_banner {
+    background: rgba(64, 150, 150, 0.8);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.titulo_banner h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+
+/* ============ MAIN INSCREVA-SE ================ */
+
+#inscreva-se h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#inscreva-se p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    
+}
+
+#inscreva-se a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent; 
+    border: 2px solid white; 
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 15px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+
+}
+
+#inscreva-se a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* #inscreva-se {
+    background-color: white;
+    padding: 40px;
+    margin: -50px auto 30px;
+    width: 80%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#inscreva-se h2 {
+    color: var(--cor--verde);
+    margin-bottom: 20px;
+
+}
+
+#inscreva-se p {
+    margin-bottom: 25px;
+}
+
+#inscreva-se a {
+    text-decoration: none;
+    color: black;
+    background-color: transparent; 
+    border: 1px solid var(--cor--verde--claro); 
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+#inscreva-se a:hover {
+    background-color: var(--cor--verde--claro);
+    color: white;
+} */
+
+/* ============ MAIN SOBRE E PROGRAMA ================ */
+
+#sobre_programa {
+    background-color: var(--cor--verde);
+    text-align: center;
+}
+
+.sobre h2 {
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+}
+
+.sobre p {
+    color: white;
+    font-size: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#programa {
+    height: 350px;
+}
+
+#programa h2{
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+}
+
+#programa ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0px 30px 30px 30px;
+}
+
+#programa li {
+    background: white;
+    width: 20%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+li .hora {
+    padding: 10px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+li .hora:hover {
+    background-color: var(--cor--verde--claro);
+    padding: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+li .desc {
+    padding: 30px;
+    color: black;
+    font-size: 20px;
+
+}
+
+/* ============ MAIN INSCRICAO ================ */
+
+#inscricao {
+    background: white;
+    padding: 40px;
+    margin: -50px auto 30px;
+    width: 80%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+#inscricao h2 {
+    padding-bottom: 10px;
+    color: var(--cor--verde);
+    text-align: center;
+    font-size: 30px;
+}
+
+.inscri_p {
+    text-align: center;
+    font-size: 20px;
+}
+
+#inscricao form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#inscricao input {
+    padding: 10px;
+    width: 50%;
+    border: none;
+    outline: none;
+    background-color: #c1c1c1;
+}
+
+#inscricao button {
+    padding: 10px 15px;
+    width: 20%;
+    background-color: transparent; 
+    color: black;
+    border: 2px solid var(--cor--verde--claro); 
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+#inscricao button:hover {
+    background: var(--cor--verde--claro);
+    color: white;
+}
+
+/* ============ MAIN PALESTRANTES ================ */
+
+
+#palestrantes h2 {
+    padding-bottom: 10px;
+    color: var(--cor--verde);
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+    margin-bottom: -60px;
+}
+
+.grid article {
+    background-color: white;
+    padding: 40px 30px;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.grid article:hover {
+    transform: translateY(-5px);
+    background-color: var(--cor--verde--claro);
+    color: white;
+}
+
+.grid article img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.grid article h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/* ============ FOOTER ================ */
+
+footer {
+    background-color: var(--cor--verde);
+    padding: 50px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+
+footer p {
+    font-size: 25px;
+}
+
+footer a {
+    text-decoration: none;
+    border: 2px solid white; 
+    transition: 0.3s;
+    padding: 15px;
+    color: white;
+}
+
+footer a:hover {
+    background-color: white;
+    color: black;
 }

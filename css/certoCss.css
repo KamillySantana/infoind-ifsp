@@ -1,0 +1,159 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    position: sticky;
+    top: 0;
+}
+
+header h1:first-child {
+    color: #2a9d8f;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 15px 20px;
+    color: #333;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #2a9d8f;
+    color: white;
+}
+
+/* HERO */
+#info {
+    height: 400px;
+    background: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f") center/cover;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#info::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(42, 157, 143, 0.7);
+    top: 0;
+    left: 0;
+}
+
+#info * {
+    position: relative;
+}
+
+#info h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* BOTÃO */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+}
+
+/* CONTATO RÁPIDO (SIMULA O BLOCO BRANCO) */
+#sobre {
+    background: #eee;
+    margin: -60px auto 0;
+    padding: 30px;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* SEÇÃO ESCURA */
+#programa {
+    background: #2f4f4f;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#programa ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+/* CARDS */
+#palestrantes {
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.grid article {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* INSCRIÇÃO */
+#inscricao {
+    padding: 50px 20px;
+    text-align: center;
+    background: #eee;
+}
+
+#inscricao form {
+    margin: auto;
+}
+
+/* FOOTER */
+footer {
+    background: #2a9d8f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sobre {
+        width: 95%;
+    }
+}

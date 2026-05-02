@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +8,18 @@
     
 </head>
 <body>
+    <!-- HEADER =================== -->
+
     <header>
-        <div>
-            <h1 class="titulo_header">INFOIND</h1>
+        <div class="titulo_header">
+            <h1>INFOIND</h1>
             <h1>IFSP Campus Birigui</h1>
         </div>
 
-        <nav>
+       <nav>
             <ul>
                 <li><a href="#info">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#sobre_programa">Sobre</a></li>
                 <li><a href="#programa">Programa</a></li>
                 <li><a href="#palestrantes">Palestrantes</a></li>
                 <li><a href="#inscricao">Inscrição</a></li>
@@ -25,66 +27,111 @@
         </nav>
     </header>
 
+    <!-- =================== MAIN =================== -->
     <main>
-        <section class="info_titulo">
-            <h1>Semana Acadêmico IFSP-Birigui de 2026</h1>
+        <!-- banner -->
+        <section class="banner">
+            <div class="titulo_banner">
+                <h1>Semana Acadêmico IFSP-Birigui de 2026</h1>
+
+                <!-- inscreva-se -->
+                <section id="inscreva-se">
+                    <h2>Explore inovações em tecnologia e educação!</h2>
+                    <p>26 - 28 de Maio de 2026 - Auditório Principal</p>
+                    <a href="#inscricao" class="btn">Inscreva-se agora</a>
+                </section>
+            </div>
         </section>
 
-        <section id="info_detalhes">
-            <p>26 - 28 de Maio de 2026 - Auditório Principal</p>
-            <p>Explore inovações em tecnologia e educação!</p>
-            <a href="#inscricao" class="btn">Inscreva-se Agora</a>
+        <!-- sobre e programa -->
+        <section id="sobre_programa">
+            <section class="sobre">
+                <h2>Sobre o Evento</h2>
+                <p>O Seminário Acadêmico do IFSP Birigui reúne estudantes, professores e profissionais para discutir avanços acadêmicos e tecnológicos. Um dia repleto de palestras inspiradoras e networking.</p>
+            </section>
+    
+            <section id="programa">
+                <h2>Programa</h2>
+                <ul>
+                    <!-- <li>09:00 - Abertura</li>
+                    <li>10:00 - Palestra 1: IA na Educação</li>
+                    <li>14:00 - Palestra 2: Sustentabilidade</li>
+                    <li>16:00 - Encerramento</li> -->
+
+                    <li>
+                        <p class="hora">09:00</p>
+                        <p class="desc">Abertura</p>
+                    </li>
+
+                    <li>
+                        <p class="hora">10:00</p>
+                        <p class="desc">Palestra 1: IA na Educação</p>
+                    </li>
+
+                    <li>
+                        <p class="hora">14:00</p>
+                        <p class="desc">Palestra 2: Sustentabilidade</p>
+                    </li>
+
+                    <li>
+                        <p class="hora">16:00</p>
+                        <p class="desc">Encerramento</p>
+                    </li>
+
+                </ul>
+            </section>
         </section>
 
-        <section id="sobre">
-            <h2>Sobre o Evento</h2>
-            <p>O Seminário Acadêmico do IFSP Birigui reúne estudantes, professores e profissionais para discutir avanços acadêmicos e tecnológicos. Um dia repleto de palestras inspiradoras e networking.</p>
+        <!-- inscricao -->
+        <section id="inscricao">
+            <h2>Inscrições</h2>
+            <p class="inscri_p">Inscrições gratuitas até 20/10/2026</p>
+            <p>Preencha o formulário abaixo:</p>
+
+            <form>
+                <input type="text" placeholder="Nome" >
+                <input type="email" placeholder="Email">
+                <button type="submit" class="btn">Enviar</button>
+            </form>
         </section>
 
-        <section id="programa">
-            <h2>Programa</h2>
-            <ul>
-                <li>09:00 - Abertura</li>
-                <li>10:00 - Palestra 1: IA na Educação</li>
-                <li>14:00 - Palestra 2: Sustentabilidade</li>
-                <li>16:00 - Encerramento</li>
-            </ul>
-        </section>
-
+        <!-- palestrantes -->
         <section id="palestrantes">
             <h2>Palestrantes</h2>
+
             <div class="grid">
                 <article>
-                    
+                    <img src="imagens/palestrantes.png" alt="">
                     <h3>Dr. João Silva</h3>
                     <p>Especialista em IA. Professor no IFSP.</p>
                 </article>
+
                 <article>
+                    <img src="imagens/mulher.avif" alt="">
                     <h3>Profa. Maria Santos</h3>
                     <p>Engenheira Ambiental. Foco em sustentabilidade.</p>
                 </article>
+
                 <article>
+                    <img src="imagens/palestrantes.png" alt="">
                     <h3>Eng. Pedro Oliveira</h3>
                     <p>Desenvolvedor Full-Stack. Inovação tech.</p>
                 </article>
             </div>
         </section>
-
-        <section id="inscricao">
-            <h2>Inscrições</h2>
-            <p>Inscrições gratuitas até 20/10/2024. Preencha o formulário abaixo:</p>
-            <!-- Placeholder for form -->
-            <form style="max-width: 400px;">
-                <input type="text" placeholder="Nome" style="width:100%; margin-bottom:0.5rem; padding:0.5rem;">
-                <input type="email" placeholder="Email" style="width:100%; margin-bottom:0.5rem; padding:0.5rem;">
-                <button type="submit" class="btn" style="width:100%;">Enviar</button>
-            </form>
-        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 IFSP Campus Birigui. Todos os direitos reservados.</p>
-        <p><a href="#" style="color:white;">Contato</a> | <a href="#" style="color:white;">Redes Sociais</a></p>
+        
+        <section>
+            <a href="#">Redes Sociais</a></p>
+        </section>
+
+        <section>
+            <a href="#">Contato</a>
+        </section>
     </footer>
+
 </body>
 </html>
